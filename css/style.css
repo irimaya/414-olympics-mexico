@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
+
 /* Reset */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Main Styling */
 html,
 body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-  background: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  background: #f8f8f8;
 }
 
 h1 {
@@ -42,69 +42,68 @@ h3,
 h4,
 h5,
 h6 {
-	margin-bottom: 15px;
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne', sans-serif;
+  margin-bottom: 15px;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 p {
-	font-size: 1rem;
-	margin: 10px 0;
-	line-height: 1.7em;
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* Utility Classes */
 .container {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .small {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .display-1 {
-	font-size: 7rem;
-  font-family: "Syncopate", sans-serif;
+  font-size: 7rem;
+  font-family: 'Syncopate', sans-serif;
 }
 
 .btn {
-	display: inline-block;
-	font-size: 15px;
-	padding: 12px 23px;
-	cursor: pointer;
-	font-weight: bold;
-	letter-spacing: 1px;
-	border-radius: 4px;
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
   border: none;
 }
 
 .btn-light {
-	background: #fff;
-	color: #000;
+  background: #fff;
+  color: #000;
 }
 
 .btn-light:hover {
-	background: #000;
-	color: #fff;
+  background: #000;
+  color: #fff;
 }
 
 /* Navbar */
 .navbar {
+  height: 80px;
   background: #fff;
-	height: 80px;
 }
 
 .navbar .logo {
@@ -116,29 +115,27 @@ a {
 }
 
 .navbar a {
-	color: #000;
-	text-decoration: none;
-	text-transform: uppercase;
+  color: #000;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
 .navbar a:hover {
-	color: lightblue;
+  color: lightblue;
 }
 
 .navbar .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul {
-	display: flex;
+  display: flex;
 }
 
 .navbar ul li {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Showcase */
@@ -155,18 +152,18 @@ a {
   align-items: flex-end;
 }
 
-/* Counter */
-.counter-box {
+/* Countdown */
+.countdown-box {
   background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.counter-box-title {
+.countdown-box-title {
   flex: 1;
   text-align: center;
   display: flex;
@@ -175,26 +172,24 @@ a {
   padding-top: 10px;
 }
 
-.counter-box-title p {
+.countdown-box-title p {
   margin-top: -15px;
 }
 
-.counter-box-clock {
+.countdown-box-clock {
+  flex: 1;
   padding: 10px 0 20px 0;
   text-align: center;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
-.counter-box-clock ul {
+.countdown-box-clock ul {
   display: flex;
   justify-content: center;
   margin-top: -20px;
 }
 
-.counter-box-clock ul li {
-  padding: 7px;
+.countdown-box-clock ul li {
+  padding: 10px;
 }
 
 #demo {
@@ -203,7 +198,8 @@ a {
 
 /* Features */
 .features {
-  background: #F8F8F8;
+  background: #f8f8f8;
+  
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -215,9 +211,9 @@ a {
 
 .features-box {
   flex: 1;
+  color: #fff;
   padding: 20px;
   height: 300px;
-  color: #fff;
   text-align: center;
   border-radius: 10px;
 }
@@ -228,23 +224,23 @@ a {
 }
 
 .athletics {
-  background: url('/images/features-athletics.png');
+  background: url('/images/features-athletics.png') no-repeat center center/cover;
 }
 .boxing {
-  background: url('/images/features-boxing.png');
+  background: url('/images/features-boxing.png') no-repeat center center/cover;
 }
 .taekwondo {
-  background: url('/images/features-taekwondo.png');
+  background: url('/images/features-taekwondo.png') no-repeat center center/cover;
 }
 .diving {
-  background: url('/images/features-diving.png');
+  background: url('/images/features-diving.png') no-repeat center center/cover;
 }
 
 /* About */
 .about {
   background: url('/images/background-about.png') no-repeat center center/cover;
-  padding: 80px 0;
   color: #fff;
+  padding: 80px 0;
 }
 
 .about .container {
@@ -263,8 +259,7 @@ a {
 
 /* Team */
 .team {
-  background: #F8F8F8;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .team table {
@@ -273,7 +268,7 @@ a {
 }
 
 .team th {
-  background: #194B5F;
+  background: #194b5f;
   color: #fff;
 }
 
@@ -285,7 +280,7 @@ a {
 
 .team td {
   padding: 20px;
-  border-bottom: 1px dotted #C4C4C4;
+  border-bottom: 1px dotted #c4c4c4;
 }
 
 /* Footer */
